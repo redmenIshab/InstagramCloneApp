@@ -1,16 +1,24 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity, Image } from "react-native";
 import Textbox from "../../components/Textbox";
 import Button from "../../components/Button";
 import styles from "./styles";
 import { facebookLogin } from "./facebookLogin";
+import img from "../../assets";
 
 export default class Login extends Component {
   facebookLogin = () => {};
   render() {
     return (
       <View style={styles.container}>
-        <Textbox placeholder={"Phone Number, email or username"} />
+        <Image
+          source={img.instaLogo}
+          style={styles.instaLogo}
+          resizeMode={"center"}
+        />
+        <Textbox
+          placeholder={"Phone Number, email or username"}
+        />
         <Textbox placeholder={"Password"} secureTextEntry />
         <Button
           type="Login"

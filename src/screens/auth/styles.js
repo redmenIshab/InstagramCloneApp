@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
     color: configs.Primary_Color,
     fontSize: 12,
     fontWeight: "600"
+  },
+  instaLogo: {
+    height: 50,
+    width: configs.Button_Width / 2,
+    paddingBottom: 100
   }
 });
 

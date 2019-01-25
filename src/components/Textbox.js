@@ -9,6 +9,8 @@ export default function Textbox({ textStyle, ...props }) {
         style={[styles.text, textStyle]}
         {...props}
         allowFontScaling={false}
+        underlineColorAndroid="transparent"
+        placeholderTextColor="#666"
       />
     </View>
   );
@@ -17,9 +19,9 @@ export default function Textbox({ textStyle, ...props }) {
 const styles = StyleSheet.create({
   container: {
     height: configs.Button_Height,
-    paddingVertical: 10,
+    paddingVertical: 0,
     borderWidth: 1,
-    borderColor: "#666",
+    borderColor: "#ccc",
     width: configs.Button_Width,
     borderRadius: 5,
     marginVertical: 5,
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     color: "#333",
     fontSize: 14,
-    fontWeight: "300"
+    fontWeight: "300",
+    paddingVertical: 10
   }
 });
