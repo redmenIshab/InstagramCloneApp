@@ -12,7 +12,7 @@ import { ProfileScreen } from "../screens/profile";
 import { NotificationScreen } from "../screens/notification";
 
 import LoginScreen from "../screens/auth/Login";
-import Icon from "../components/Icon";
+import { Icon } from "../components";
 
 const BottomNavigator = createBottomTabNavigator(
   {
@@ -97,7 +97,7 @@ const BottomNavigator = createBottomTabNavigator(
       activeTintColor: "#000",
       showLabel: false
     },
-    activeTintColor: "#000"
+    initialRouteName: "Profile"
   }
 );
 

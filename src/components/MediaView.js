@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Image, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native'
 // import Video from 'react-native-video'
-import Icon from './Icon';
+import {Icon} from './index';
 
 const { width } = Dimensions.get('window');
 

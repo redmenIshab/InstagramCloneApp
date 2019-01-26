@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { View, Image, Text, StyleSheet, FlatList } from "react-native";
-import Icon from '../../components/Icon';
-import MediaView from "../../components/MediaView";
+import { Icon, MediaView } from "../../components";
 
 const data = [
   //   {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
-import Textbox from "../../components/Textbox";
-import Button from "../../components/Button";
+import {Textbox,Button} from "../../components";
 import styles from "./styles";
 import { facebookLogin } from "./facebookLogin";
 import img from "../../assets";
