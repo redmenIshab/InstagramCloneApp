@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
-import { ProfilePicture, Button } from "../../components";
+import { Text, View, TouchableOpacity, ScrollView } from "react-native";
+import { ProfilePicture, Button, Icon } from "../../components";
 import styles from "./styles";
+import GridView from "./GridView";
 export default class Profile extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        
+      <ScrollView contentContainerStyle={styles.container}>
         {/* profile Info Container includes ProfilePhoto | Posts | Followers | Following | Edit Profile */}
 
         <View style={styles.profileInfoContainer}>
@@ -42,10 +42,33 @@ export default class Profile extends Component {
         </View>
 
         {/* profile Name | Status */}
-        <View >
-          
+        <View style={styles.nameStatusContainer}>
+          <Text style={styles.nameText}>Miss Mi</Text>
+          <View style={styles.subContainer2}>
+            <Text style={styles.statusText}>
+              {`what we give is what we get in one or the other way. 
+#openminded 
+Traveller ,Vlogger ,Software Engineer 
+#reactnative #nodejs `}
+            </Text>
+          </View>
         </View>
-      </View>
+
+        {/* Myday collection */}
+        <View style={styles.mydayContainer}>
+          <View style={styles.subContainer3}>
+            <TouchableOpacity
+              style={styles.mydayCircle}
+              onPress={() => alert("This feature will be added soon")}
+            >
+              <Icon name={"add"} size={25} style={styles.icon} />
+            </TouchableOpacity>
+            <Text style={styles.mydayText}>New</Text>
+          </View>
+        </View>
+        {/* tabview postViewer */}
+        <GridView />
+      </ScrollView>
     );
   }
 }

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import configs from "../../config";
 
 const styles = StyleSheet.create({
-  container: { marginTop: 40 },
+  container: { marginTop: 40, marginHorizontal: 0 },
   subContainer1: { alignSelf: "center", paddingLeft: 10 },
   profileInfoContainer: {
     flexDirection: "row",
@@ -66,6 +66,48 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     borderColor: "#666",
     borderWidth: 1
+  },
+  //Name and status styling
+  nameStatusContainer: {
+    paddingHorizontal: 10
+  },
+  nameText: {
+    fontWeight: "600",
+    fontSize: 12
+  },
+  subContainer2: {},
+  statusText: {
+    fontSize: 12,
+    color: "#333"
+  },
+  //myday style
+
+  mydayContainer: {
+    paddingVertical: 10,
+    justifyContent: "center",
+    alignItems: "flex-start"
+  },
+  subContainer3: {
+    alignItems: "center"
+  },
+  mydayCircle: {
+    height: 50,
+    width: 50,
+    borderRadius: 25,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 1,
+    borderColor: "#666",
+    marginVertical: 10,
+    marginHorizontal: 10
+  },
+
+  icon: {
+    paddingHorizontal: 10
+  },
+  mydayText: {
+    fontSize: 12,
+    color: "#222"
   }
 });
 
