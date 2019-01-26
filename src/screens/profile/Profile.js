@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Text, View, TouchableOpacity, ScrollView } from "react-native";
 import { ProfilePicture, Button, Icon } from "../../components";
 import styles from "./styles";
-import GridView from "./GridView";
+import TabNavigator from "./TabNavigator";
 export default class Profile extends Component {
   render() {
     return (
@@ -67,7 +67,7 @@ Traveller ,Vlogger ,Software Engineer
           </View>
         </View>
         {/* tabview postViewer */}
-        <GridView />
+        <TabNavigator />
       </ScrollView>
     );
   }
