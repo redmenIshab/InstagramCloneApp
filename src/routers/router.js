@@ -97,7 +97,7 @@ const BottomNavigator = createBottomTabNavigator(
       activeTintColor: "#000",
       showLabel: false
     },
-    initialRouteName: "Profile" 
+    initialRouteName: "Search"
   }
 );
 
