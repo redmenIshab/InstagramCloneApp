@@ -9,7 +9,7 @@ import { HomeScreen } from "../screens/home";
 import { SearchScreen } from "../screens/search";
 import { AddMediaScreen } from "../screens/addMedia";
 import { ProfileScreen } from "../screens/profile";
-import { NotificationScreen } from "../screens/notification";
+import { NotificationScreen,NotificationTabNavigator } from "../screens/notification";
 
 import LoginScreen from "../screens/auth/Login";
 import { Icon } from "../components";
@@ -97,7 +97,7 @@ const BottomNavigator = createBottomTabNavigator(
       activeTintColor: "#000",
       showLabel: false
     },
-    initialRouteName: "Search"
+    initialRouteName: "Notification"
   }
 );
 

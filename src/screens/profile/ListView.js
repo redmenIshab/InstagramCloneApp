@@ -142,6 +142,7 @@ export default class HomeScreen extends Component {
             </View>
           </View>
         )}
+        keyExtractor={(item, index) => index.toString()}
       />
     );
   }

@@ -134,7 +134,7 @@ export default class GridView extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
+    flexDirection: "row"
   },
   image: {
     flex: 1,
