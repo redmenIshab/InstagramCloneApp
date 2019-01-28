@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 
-export default class AddMedia extends Component {
-  componentWillMount() {
-    this.props.navigation.navigate("AddMediaTabNavigator");
-  }
+export default class Photo extends Component {
   render() {
     return (
       <View>

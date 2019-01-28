@@ -1,13 +1,12 @@
 import React from "react";
 import {
   createSwitchNavigator,
-  createStackNavigator,
   createAppContainer,
   createBottomTabNavigator
 } from "react-navigation";
 import { HomeScreen } from "../screens/home";
 import { SearchScreen } from "../screens/search";
-import { AddMediaScreen } from "../screens/addMedia";
+import { AddMediaScreen, AddMediaTabNavigator } from "../screens/addMedia";
 import { ProfileScreen } from "../screens/profile";
 import { NotificationScreen,NotificationTabNavigator } from "../screens/notification";
 
@@ -103,7 +102,8 @@ const BottomNavigator = createBottomTabNavigator(
 
 const switchNavigator = createSwitchNavigator({
   Dashboard: BottomNavigator,
-  Login: LoginScreen
+  Login: LoginScreen,
+  AddMediaTabNavigator: AddMediaTabNavigator
 });
 
 export default createAppContainer(switchNavigator);
