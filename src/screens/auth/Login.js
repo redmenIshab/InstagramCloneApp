@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
-import {Textbox,Button} from "../../components";
+import { Textbox, Button } from "../../components";
 import styles from "./styles";
-import { facebookLogin } from "./facebookLogin";
+// import { facebookLogin } from "./facebookLogin";
 import img from "../../assets";
 
 export default class Login extends Component {
@@ -15,9 +15,7 @@ export default class Login extends Component {
           style={styles.instaLogo}
           resizeMode={"center"}
         />
-        <Textbox
-          placeholder={"Phone Number, email or username"}
-        />
+        <Textbox placeholder={"Phone Number, email or username"} />
         <Textbox placeholder={"Password"} secureTextEntry />
         <Button
           type="Login"
@@ -31,7 +29,7 @@ export default class Login extends Component {
         <Text style={styles.or}>OR</Text>
         <TouchableOpacity
           style={styles.fbLoginContainer}
-          onPress={() => facebookLogin()}
+          // onPress={() => facebookLogin()}
         >
           <Text style={styles.fbLoginText}>Log in with facebook</Text>
         </TouchableOpacity>

@@ -1,1 +1,0 @@
-/Users/Ishab/Desktop/workspace/instagramCloneApp/ios/Pods/FBSDKCoreKit/FacebookSDKStrings.bundle

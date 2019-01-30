@@ -3,6 +3,7 @@ package com.instagramcloneapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import io.invertase.firebase.RNFirebasePackage;
@@ -35,7 +36,8 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(new MainReactPackage(), new FBSDKPackage(mCallbackManager),
+      return Arrays.<ReactPackage>asList(new MainReactPackage(),
+            new VectorIconsPackage(), new FBSDKPackage(mCallbackManager),
           new VectorIconsPackage(), new RNFirebasePackage(), new RNFirebaseAuthPackage());
     }
 

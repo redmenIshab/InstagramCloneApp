@@ -5,7 +5,7 @@ import configs from "../config";
 export default function Button({ title, textColor, style, ...props }) {
   return (
     <TouchableOpacity style={[styles.container, style]} {...props}>
-      <Text style={[styles.text, { color: textColor }]}>{title}</Text>
+      <Text style={[styles.text, { color: textColor || "#fff" }]}>{title}</Text>
     </TouchableOpacity>
   );
 }

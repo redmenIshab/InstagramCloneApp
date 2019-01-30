@@ -5,11 +5,6 @@ PODS:
   - BoringSSL/Implementation (10.0.6):
     - BoringSSL/Interface (= 10.0.6)
   - BoringSSL/Interface (10.0.6)
-  - FBSDKCoreKit (4.40.0)
-  - FBSDKLoginKit (4.40.0):
-    - FBSDKCoreKit
-  - FBSDKShareKit (4.40.0):
-    - FBSDKCoreKit
   - Firebase/Core (5.15.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.4.0)
@@ -96,34 +91,10 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
-  - React (0.11.0):
-    - React/Core (= 0.11.0)
-  - react-native-fbsdk (0.8.0):
-    - React
-    - react-native-fbsdk/Core (= 0.8.0)
-    - react-native-fbsdk/Login (= 0.8.0)
-    - react-native-fbsdk/Share (= 0.8.0)
-  - react-native-fbsdk/Core (0.8.0):
-    - FBSDKCoreKit
-    - React
-  - react-native-fbsdk/Login (0.8.0):
-    - FBSDKLoginKit
-    - React
-  - react-native-fbsdk/Share (0.8.0):
-    - FBSDKShareKit
-    - React
-  - React/Core (0.11.0)
-  - RNVectorIcons (6.2.0):
-    - React
 
 DEPENDENCIES:
-  - FBSDKCoreKit (from `https://github.com/facebook/facebook-objc-sdk.git`)
-  - FBSDKLoginKit (from `https://github.com/facebook/facebook-objc-sdk.git`)
-  - FBSDKShareKit (from `https://github.com/facebook/facebook-objc-sdk.git`)
   - Firebase/Core (~> 5.15.0)
   - Firebase/Firestore (~> 5.15.0)
-  - react-native-fbsdk (from `../node_modules/react-native-fbsdk`)
-  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -141,36 +112,9 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
-    - React
-
-EXTERNAL SOURCES:
-  FBSDKCoreKit:
-    :git: https://github.com/facebook/facebook-objc-sdk.git
-  FBSDKLoginKit:
-    :git: https://github.com/facebook/facebook-objc-sdk.git
-  FBSDKShareKit:
-    :git: https://github.com/facebook/facebook-objc-sdk.git
-  react-native-fbsdk:
-    :path: "../node_modules/react-native-fbsdk"
-  RNVectorIcons:
-    :path: "../node_modules/react-native-vector-icons"
-
-CHECKOUT OPTIONS:
-  FBSDKCoreKit:
-    :commit: 4dee536fe13f9ff5f43492e9eb1bc43314fae2c4
-    :git: https://github.com/facebook/facebook-objc-sdk.git
-  FBSDKLoginKit:
-    :commit: 4dee536fe13f9ff5f43492e9eb1bc43314fae2c4
-    :git: https://github.com/facebook/facebook-objc-sdk.git
-  FBSDKShareKit:
-    :commit: 4dee536fe13f9ff5f43492e9eb1bc43314fae2c4
-    :git: https://github.com/facebook/facebook-objc-sdk.git
 
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
-  FBSDKCoreKit: f8110969998fc170ab250fe5d1460f14d0ae1e9b
-  FBSDKLoginKit: a46374bccb7a58cf4e86b408000f9568eee24ad7
-  FBSDKShareKit: 875503b8e5f27c7a0935e29d08e99c1d262122cf
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
@@ -184,10 +128,7 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  React: ab1a2e21deb34965c38328d5ec40cc7d12c6050a
-  react-native-fbsdk: d5f98cc5abecbcc463e3c35c04743d716d002d37
-  RNVectorIcons: 8c52e1e8da1153613fdef44748e865c25556cb9c
 
-PODFILE CHECKSUM: 9b600f1538dbdf3952046dadce51c3580860c5d2
+PODFILE CHECKSUM: 0ff85b7694273328e711b07d13768e21975ecbe1
 
 COCOAPODS: 1.5.3

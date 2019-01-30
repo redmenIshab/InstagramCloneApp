@@ -8,7 +8,10 @@ import { HomeScreen } from "../screens/home";
 import { SearchScreen } from "../screens/search";
 import { AddMediaScreen, AddMediaTabNavigator } from "../screens/addMedia";
 import { ProfileScreen } from "../screens/profile";
-import { NotificationScreen,NotificationTabNavigator } from "../screens/notification";
+import {
+  NotificationScreen,
+  NotificationTabNavigator
+} from "../screens/notification";
 
 import LoginScreen from "../screens/auth/Login";
 import { Icon } from "../components";
@@ -101,8 +104,8 @@ const BottomNavigator = createBottomTabNavigator(
 );
 
 const switchNavigator = createSwitchNavigator({
-  Dashboard: BottomNavigator,
   Login: LoginScreen,
+  Dashboard: BottomNavigator,
   AddMediaTabNavigator: AddMediaTabNavigator
 });
 
