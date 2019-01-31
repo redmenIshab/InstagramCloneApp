@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { View, Image, Text, StyleSheet, FlatList } from "react-native";
 import { Icon, MediaView } from "../../components";
+import Feather from "react-native-vector-icons/Feather";
+import img from "../../assets";
+import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 
 const data = [
   //   {
@@ -110,27 +113,27 @@ export default class HomeScreen extends Component {
               }}
             >
               <Icon
-                name="heart"
-                size={34}
+                name="heart-empty"
+                size={25}
                 color="black"
                 style={{ marginTop: 12, marginLeft: 15 }}
               />
-              <Icon
-                name="text"
-                size={34}
+              <SimpleLineIcons
+                name="bubble"
+                size={25}
                 color="black"
                 style={{ marginTop: 12, marginLeft: 20 }}
               />
-              <Icon
+              <Feather
                 name="send"
-                size={34}
+                size={25}
                 color="black"
                 style={{ marginTop: 12, marginLeft: 20 }}
               />
               <View style={{ flex: 1 }} />
-              <Icon
+              <Feather
                 name="bookmark"
-                size={34}
+                size={25}
                 color="black"
                 style={{ marginTop: 12, marginRight: 15 }}
               />

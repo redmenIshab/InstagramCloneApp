@@ -99,14 +99,19 @@ const BottomNavigator = createBottomTabNavigator(
       activeTintColor: "#000",
       showLabel: false
     },
-    initialRouteName: "Notification"
+    initialRouteName: "Home"
   }
 );
 
-const switchNavigator = createSwitchNavigator({
-  Login: LoginScreen,
-  Dashboard: BottomNavigator,
-  AddMediaTabNavigator: AddMediaTabNavigator
-});
+const switchNavigator = createSwitchNavigator(
+  {
+    Login: LoginScreen,
+    Dashboard: BottomNavigator,
+    AddMediaTabNavigator: AddMediaTabNavigator
+  },
+  {
+    initialRouteName: "Dashboard"
+  }
+);
 
 export default createAppContainer(switchNavigator);

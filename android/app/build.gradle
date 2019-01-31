@@ -137,7 +137,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-vector-icons')
     implementation 'com.facebook.android:facebook-android-sdk:4.34.0'
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-firebase')
