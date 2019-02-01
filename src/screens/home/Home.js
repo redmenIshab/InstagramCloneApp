@@ -55,8 +55,17 @@ const data = [
 const { height, width } = Dimensions.get("window");
 export default class HomeScreen extends Component {
   state = {
-    height: 500
+    height: 500,
+    iconName:"heart-empty",
+    iconColor:"black"
   };
+  changeIcon(){
+    if(this.state.iconName==="heart-empty" && this.state.iconColor==="black"){
+      this.setState({iconName:"heart",iconColor:"red"})
+    }else if(this.state.iconName==="heart" && this.state.iconColor==="red"){
+      this.setState({iconName:"heart-empty",iconColor:"black"})
+    }
+  }
   render() {
     let imgDimension;
     return (
@@ -79,6 +88,7 @@ export default class HomeScreen extends Component {
         {/* Rendering All items */}
         <FlatList
           data={data}
+          extraData={this.state}
           renderItem={({ item }) => (
             <View>
               <View
@@ -137,10 +147,11 @@ export default class HomeScreen extends Component {
                 }}
               >
                 <Icon
-                  name="heart-empty"
+                  name={this.state.iconName}
                   size={25}
-                  color="black"
+                  color={this.state.iconColor}
                   style={{ marginTop: 12, marginLeft: 15 }}
+                  onPress={()=>this.changeIcon()}
                 />
                 <SimpleLineIcons
                   name="bubble"
