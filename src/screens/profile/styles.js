@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 import configs from "../../config";
 
 const styles = StyleSheet.create({
-  container: { marginTop: 40, marginHorizontal: 0 },
+  container: { marginTop: Platform.OS == "ios" ? 40 : 0, marginHorizontal: 0 },
   subContainer1: { alignSelf: "center", paddingLeft: 10 },
   profileInfoContainer: {
     flexDirection: "row",

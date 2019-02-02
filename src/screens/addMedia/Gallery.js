@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Platform } from "react-native";
 import TitleBar from "./TitleBar";
 
 export default class Gallery extends Component {
   render() {
     return (
-      <View style={{ marginTop: 40 }}>
+      <View style={{ marginTop: Platform.OS == "ios" ? 40 : 0 }}>
         <TitleBar
           cancel={() => this.props.navigation.navigate("Dashboard")}
           title={"Gallery"}

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Platform } from "react-native";
 import SearchTab from "./SearchTab";
 export default class Search extends Component {
   render() {
     return (
-      <View style={{ marginTop: 40 }}>
+      <View style={{ marginTop: Platform.OS == "ios" ? 40 : 0 }}>
         <SearchTab />
       </View>
     );

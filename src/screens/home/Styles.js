@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 40
+    marginTop: Platform.OS == "ios" ? 40 : 0
   },
   mydayContainer: {
     paddingVertical: 5,

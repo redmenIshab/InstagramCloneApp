@@ -11,7 +11,7 @@ export default function ProfilePicture(x) {
       <Image
         source={img.profilePicture}
         style={styles.profilePicture}
-        resizeMode="center"
+        resizeMode="cover"
       />
     </View>
   );
@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     borderColor: configs.Primary_Color,
     borderWidth: 0.3,
     marginHorizontal: 10,
-    marginVertical: 10,
     alignSelf: "center"
   },
   profilePicture: {

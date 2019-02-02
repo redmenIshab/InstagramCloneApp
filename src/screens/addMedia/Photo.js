@@ -1,7 +1,14 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Slider } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Slider,
+  Platform
+} from "react-native";
 import { RNCamera } from "react-native-camera";
-
+import TitleBar from "./TitleBar";
 export default class Photo extends Component {
   state = {
     flash: "off",
@@ -222,14 +229,22 @@ export default class Photo extends Component {
     );
   }
   render() {
-    return <View style={styles.container}>{this.renderCamera()}</View>;
+    return (
+      <View style={styles.container}>
+        <TitleBar
+          cancel={() => this.props.navigation.navigate("Dashboard")}
+          title={"Photo"}
+        />
+        {this.renderCamera()}
+      </View>
+    );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 10,
+    marginTop: Platform.OS == "ios" ? 40 : 0,
     backgroundColor: "#000"
   },
   flipButton: {
