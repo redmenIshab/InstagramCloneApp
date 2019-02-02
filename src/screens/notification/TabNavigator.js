@@ -11,9 +11,8 @@ export default class TabNavigator extends Component {
         tabBarUnderlineStyle={styles.tabBarUnderline}
         tabBarActiveTextColor={"#222"}
         tabBarInactiveTextColor={"#666"}
-        initialPage={1}
       >
-        <Following tabLabel="Following" />
+        {/* <Following tabLabel="Following" /> */}
         <You tabLabel="You" />
       </ScrollableTabView>
     );

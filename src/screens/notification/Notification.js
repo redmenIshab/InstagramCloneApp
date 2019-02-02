@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
-import { ProfilePicture } from "../../components";
-import styles from "../profile/styles";
+import { Text, View, TouchableOpacity, FlatList } from "react-native";
 import TabNavigator from "./TabNavigator";
-const notifications = {
-  notification1: {
+import { ProfilePicture, Button, Icon } from "../../components";
+import styles from "./Styles";
+
+const notifications = [
+  {
+    id: "notification1",
     message: "Ninjawink.motivation liked your post",
     relaltedId: "Ninjawink.motivation",
     relatedIdProfilePhoto: "some source of image here",
@@ -13,7 +15,8 @@ const notifications = {
     },
     time: "12:00"
   },
-  notification2: {
+  {
+    id: "notification2",
     message: "Arun liked your post",
     relaltedId: "Ninjawink.motivation",
     relatedIdProfilePhoto: "some source of image here",
@@ -22,7 +25,8 @@ const notifications = {
     },
     time: "20:00"
   },
-  notification3: {
+  {
+    id: "notification3",
     message: "Prashant liked your post",
     relaltedId: "Ninjawink.motivation",
     relatedIdProfilePhoto: "some source of image here",
@@ -31,7 +35,8 @@ const notifications = {
     },
     time: "22:00"
   },
-  notification4: {
+  {
+    id: "notification4",
     message: "Redmen started following you",
     relaltedId: "Ninjawink.motivation",
     relatedIdProfilePhoto: "some source of image here",
@@ -40,12 +45,27 @@ const notifications = {
     },
     time: "23:00"
   }
-};
+];
 export default class Notification extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TabNavigator />
+        <View style={styles.title}>
+          <Text style={styles.you}>You</Text>
+        </View>
+        <FlatList
+          data={notifications}
+          style={styles.flatlist}
+          renderItem={({ item }) => (
+            <TouchableOpacity style={styles.itemContainer}>
+              <ProfilePicture
+                style={{ height: 40, width: 40, borderRadius: 20 }}
+              />
+              <Text style={styles.message}>{item.message}</Text>
+            </TouchableOpacity>
+          )}
+          keyExtractor={(item, index) => index.toString()}
+        />
       </View>
     );
   }
