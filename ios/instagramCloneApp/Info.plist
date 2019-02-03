@@ -103,5 +103,27 @@
 <string>Your message to user when the microphone is accessed for the first time</string>
 <key>NSPhotoLibraryAddUsageDescription</key>
 <string>Your message to user when the photo library is accessed for the first time</string>
+
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>fb815893325423371</string>
+    </array>
+  </dict>
+</array>
+<key>FacebookAppID</key>
+<string>815893325423371</string>
+<key>FacebookDisplayName</key>
+<string>Redmen Ishab App</string>
+
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>fbapi</string>
+  <string>fb-messenger-share-api</string>
+  <string>fbauth2</string>
+  <string>fbshareextension</string>
+</array>
 </dict>
 </plist>

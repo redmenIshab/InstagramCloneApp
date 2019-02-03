@@ -110,7 +110,7 @@ const switchNavigator = createSwitchNavigator(
     AddMediaTabNavigator: AddMediaTabNavigator
   },
   {
-    initialRouteName: "Dashboard"
+    initialRouteName: "Login"
   }
 );
 
