@@ -19,7 +19,9 @@ export default class Login extends Component {
   async componentWillMount() {
     let token = await AsyncStorage.getItem("token");
     if (token) {
-      this.props.navigation.navigate("Dashboard");
+      // this.props.navigation.navigate("Dashboard");
+      this.setState({ loader: false });
+
       return;
     }
     this.setState({ loader: false });
