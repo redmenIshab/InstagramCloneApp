@@ -1,14 +1,14 @@
 # InstagramCloneApp
 This is clone of instagram app .
 
-Primary Features:
+<em>Primary Features:</em></br>
   -Facebook Authentication.</br>
   -pin point design accuracy.</br>
   -firebase authentication.</br>
   -native camera integration.</br>
   -scalable project structure.</br>
   
-Upcoming Features:
+<em>Upcoming Features:</em></br>
   -Firebase Authentication </br>
   -Firebase Database integration</br>
   -Able to upload picture and edit profile informations.</br>
