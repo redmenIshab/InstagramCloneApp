@@ -2,25 +2,25 @@
 This is clone of instagram app .
 
 Primary Features:
-  -Facebook Authentication.
-  -pin point design accuracy.
-  -firebase authentication.
-  -native camera integration.
-  -scalable project structure.
+  -Facebook Authentication.</br>
+  -pin point design accuracy.</br>
+  -firebase authentication.</br>
+  -native camera integration.</br>
+  -scalable project structure.</br>
   
 Upcoming Features:
-  -Firebase Authentication 
-  -Firebase Database integration
-  -Able to upload picture and edit profile informations.
-  -refresh news feed.
-  -push notification
+  -Firebase Authentication </br>
+  -Firebase Database integration</br>
+  -Able to upload picture and edit profile informations.</br>
+  -refresh news feed.</br>
+  -push notification</br>
   
-  To run the app:
-   1.clone the repository.
-   2.cd instagramCloneApp
-   3.npm i 
-   4.react-native run-ios (for ios devices)
-   5.react-native run-android (for android devices)
+  <strong>To run the app:</strong></br>
+   1.clone the repository</br>
+   2.cd instagramCloneApp</br>
+   3.npm i </br>
+   4.react-native run-ios (for ios devices)</br>
+   5.react-native run-android (for android devices)</br>
    
    
   
